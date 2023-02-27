@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Rifky Maulana',
+  description: "Software Developer",
 };
 
 /**
@@ -69,18 +69,16 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Rifky Maulana.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a <strong className="text-stone-100">Software Engineer</strong>, currently working
+        at <strong className="text-stone-100">Stamps</strong> helping build a CRM & mobile app development company.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me in <strong className="text-stone-100">Library</strong>
+        , or exploring beautiful{' '} <strong className="text-stone-100">Place</strong>.
       </p>
     </>
   ),
@@ -104,16 +102,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I really like learning new things. Coding is a field that requires us to learn all the time and it's a lot of fun.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Location', text: 'Jakarta, Indonesia', Icon: MapIcon},
+    {label: 'Age', text: '22', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Indonesian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Coding, Books, Chess', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of Singaperbangsa Karawang', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Stamps.', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -126,15 +122,11 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'English',
+        level: 8,
+      },
+      {
+        name: 'Indonesia',
         level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
       },
     ],
   },
@@ -149,43 +141,35 @@ export const skills: SkillGroup[] = [
         name: 'Typescript',
         level: 7,
       },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
     ],
   },
   {
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
+        name: 'Python',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Node.JS',
+        level: 7,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'Django',
+        level: 8,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Database',
     skills: [
       {
-        name: 'React Native',
+        name: 'Postgresql',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
+        name: 'MYsql',
+        level: 8,
       },
     ],
   },
@@ -268,9 +252,9 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
+    date: '2018-2022',
+    location: 'University Of Singaperbangsa Karawang',
+    title: 'Bachelor in Computer Science',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
   {
@@ -283,24 +267,12 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'Janury 2023 - Present',
+    location: 'Stamps',
+    title: 'Software Developer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Maintance project CRM and mobile app.
       </p>
     ),
   },
@@ -336,27 +308,27 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'You can contact me on:',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'rifkymaulana.dev@gmail.com',
+      href: 'mailto:rifkymaulana.dev@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Jakarta, Indonesia',
+      href: 'https://www.google.ca/maps/place/Jakarta,+Daerah+Khusus+Ibukota+Jakarta/@-6.229728,106.6894292,11z/data=!3m1!4b1!4m6!3m5!1s0x2e69f3e945e34b9d:0x5371bf0fdad786a2!8m2!3d-6.2087634!4d106.845599!16zL20vMDQ0cnY',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@rifkymaaulaana',
+      href: 'https://www.instagram.com/rifkymaaulaana/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'Rifkymaulana',
+      href: 'https://github.com/Rifkymaulana',
     },
   ],
 };
@@ -365,9 +337,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Rifkymaulana'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: '#'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/rifky-maulana-ab0484234/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/rifkymaaulaana/'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/rifky_maauul'},
 ];
